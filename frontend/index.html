@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Scraper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>URL Scraper</h1>
+    <form id="scrape-form">
+      <label for="url">Enter URL:</label>
+      <input type="text" id="url" name="url" required>
+      <button type="submit">Scrape</button>
+    </form>
+    <div id="result" class="hidden">
+      <p>Status: <span id="status"></span></p>
+      <p>Title: <span id="title"></span></p>
+      <p>Size: <span id="size"></span></p>
+      <video id="video-player" controls class="hidden">
+        <source id="video-source" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <a id="result-url" href="#" target="_blank" class="hidden">Download Video</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
